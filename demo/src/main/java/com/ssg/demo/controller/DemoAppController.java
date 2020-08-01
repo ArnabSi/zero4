@@ -19,7 +19,7 @@ public class DemoAppController {
 	/**
 	 * @return
 	 */
-	@GetMapping(path = "/default")
+	@GetMapping(path = {"/","/default"})
 	public String getDefaultMessage() {
 		return demoService.getDefaultMessage();
 	}
