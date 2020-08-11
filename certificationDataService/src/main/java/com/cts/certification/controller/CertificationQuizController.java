@@ -23,7 +23,7 @@ public class CertificationQuizController {
 	/**
 	 * @return
 	 */
-	@GetMapping(path="/quizdetails", produces = MediaType.APPLICATION_JSON_VALUE)
+	@GetMapping(path= {"/","/quizdetails"}, produces = MediaType.APPLICATION_JSON_VALUE)
 	public List<Quiz> getQuizDetails(){
 		return certificationQuizService.getQuizDetails();
 	}
