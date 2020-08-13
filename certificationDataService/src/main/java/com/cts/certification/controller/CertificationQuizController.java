@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.cts.certification.model.Quiz;
+import com.cts.certification.model.QuizQuestion;
 import com.cts.certification.service.CertificationQuizService;
 
 /**
@@ -28,6 +29,11 @@ public class CertificationQuizController {
 	@GetMapping(path= {"/","/quizdetails"}, produces = MediaType.APPLICATION_JSON_VALUE)
 	public List<Quiz> getQuizDetails(){
 		return certificationQuizService.getQuizDetails();
+	}
+	
+	@GetMapping(path= {"/quizdetailsnew"}, produces = MediaType.APPLICATION_JSON_VALUE)
+	public List<QuizQuestion> getQuizDetailsNew(){
+		return certificationQuizService.getQuizDetailsNew();
 	}
 
 }
