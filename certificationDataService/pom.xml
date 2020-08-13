@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.cts</groupId>
-	<artifactId>certificationDataService</artifactId>
+	<artifactId>certificationDataService1</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
-	<name>certificationDataService</name>
+	<name>certificationDataService1</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
